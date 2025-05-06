@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+
+import {NameFactComponent} from './components/name-fact/name-fact.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [NameFactComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
