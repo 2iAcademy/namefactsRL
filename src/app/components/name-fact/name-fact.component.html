@@ -8,15 +8,19 @@
       <div class="input-row">
         <mat-form-field class="full-width" appearance="outline">
           <mat-label>Enter a name</mat-label>
-          <input matInput  />
+          <input [(ngModel)]="name" (keyup.enter)="getNewAgeStats()" />
         </mat-form-field>
-        <button mat-raised-button color="primary" >Search</button>
+        <button mat-raised-button color="primary" (click)="getNewAgeStats()">Search</button>
       </div>
 
-      <div  class="result">
-        <p><strong>Name:</strong> </p>
-        <p><strong>Estimated Age:</strong> </p>
-        <p><strong>Sample Size:</strong> </p>
+      <div *ngIf="ageResponse" class="result">
+        <p><strong>Name:</strong> {{ ageResponse.name }}</p>
+        <p><strong>Estimated Age:</strong> {{ ageResponse.age }}</p>
+        <p><strong>Sample Size:</strong> {{ ageResponse.count }}</p>
+      </div>
+
+      <div *ngIf="!ageResponse" class>
+
       </div>
     </mat-card-content>
   </mat-card>
