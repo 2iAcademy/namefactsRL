@@ -1,16 +1,23 @@
-<div class="cat-container">
+<div class="container">
   <mat-card>
     <mat-card-header>
-      <mat-card-title>Generate stats for a name</mat-card-title>
+      <mat-card-title>🔍 Generate stats for a name</mat-card-title>
     </mat-card-header>
 
     <mat-card-content>
-      <p></p>
-    </mat-card-content>
+      <div class="input-row">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Enter a name</mat-label>
+          <input matInput  />
+        </mat-form-field>
+        <button mat-raised-button color="primary" >Search</button>
+      </div>
 
-    <mat-card-actions>
-      <input type="text">
-      <button >Search</button>
-    </mat-card-actions>
+      <div  class="result">
+        <p><strong>Name:</strong> </p>
+        <p><strong>Estimated Age:</strong> </p>
+        <p><strong>Sample Size:</strong> </p>
+      </div>
+    </mat-card-content>
   </mat-card>
 </div>

@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+mat-card {
+  width: 500px;
+}
+
+.input-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.full-width {
+  flex: 1;
+}
+
+.result p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}

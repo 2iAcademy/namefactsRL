@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import {NameFactComponent} from './components/name-fact/name-fact.component';
+import {NameFactComponent, } from './components/name-fact/name-fact.component';
 
 @Component({
   selector: 'app-root',
