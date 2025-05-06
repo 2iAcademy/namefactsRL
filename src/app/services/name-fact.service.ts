@@ -11,6 +11,7 @@ export class NameFactService {
   constructor(private http: HttpClient) { }
 
   getAgeFromName(name: string): Observable<any> {
-    return this.http.get(`${this.apiUrl}/${name}`)
+    return this.http.get(`${this.apiUrl}${encodeURIComponent(name)}`);
   }
+
 }
